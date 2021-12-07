@@ -4,7 +4,6 @@
 
 无虚拟节点一致性hash分表流程图
 
-![img](file:///C:/Users/qiaoyn/Documents/WXWork/1688850158857183/Cache/Image/2021-11/157b1ef870ace3bd8fbd2e28f0a48d7.png)
 
 application.yml
 
