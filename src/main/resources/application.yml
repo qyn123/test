@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    name: test
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: root
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      filter:
+        stat:
+          merge-sql: true
+          slow-sql-millis: 5000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 30000
+
+table:
+  num: 3
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.qiaoyn.entity
